@@ -81,17 +81,127 @@
     transform: scale(2);
 }
 
-
-
 /* Esercizio 10*/
+.ex-10-icon {
+    animation: loading 1s linear infinite;
+}
 
+@keyframes loading {
+    0% {
+        transform: rotate(1turn);
+    }
+}
 
 /* Esercizio 11*/
+.ex-11-icon:hover {
+    animation: loading-2 2s linear/*reverse; */
+}
 
+@keyframes loading-2 {
+    0% {
+        transform: rotate(0.5);
+    }
+    80% {
+        transform: rotate(300deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
 
 /* Esercizio 12*/
+.ex-12-button:hover .ex-12-top-white  {
+    animation: move-top 3s linear;
+}
 
+@keyframes move-top {
+    0% {
+        left: 10%;
+    }
+    50%{
+        left: 70%;
+    }
+    100% {
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white  {
+    animation: move-bottom 3s linear;
+}
+
+@keyframes move-bottom {
+    0% {
+        right: 10%;
+    }
+    50% {
+        right: 70%;
+    }
+    100% {
+        right: 10%;
+    }
+}
 
 /* Esercizio 13*/
+.ex-13-button:hover .ex-13-top-white {
+    animation: move-completo-top 3s linear;
+}
 
+@keyframes move-completo-top {
+    0% {
+        left: 10%;
+        top: -10%;
+    }
+    20% {
+        left: 70%;
+        top: -10%;
+    }
+    40% {
+        left: 100%;
+        top: 100%;
+    }
+    60% {
+        left: 20%;
+        top: 100%;
+    }
+    90% {
+        left: -10%;
+        top: -10%;
+    }
+    100% {
+        left: 10%;
+        top: -10%;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: move-completo-bottom 3s linear;
+}
+
+@keyframes move-completo-bottom{
+    0% {
+        right: 10%;
+        bottom: -10%;
+    }
+    20% {
+        right: 70%;
+        bottom: -10%;
+    }
+    40% {
+        right: 100%;
+        bottom: 100%;
+    }
+    60% {
+        right: 20%;
+        bottom: 100%;
+    }
+    90% {
+        right: -10%;
+        bottom: -10%;
+    }
+    100% {
+        right: 10%;
+        bottom: -10%;
+    }
+}
 
